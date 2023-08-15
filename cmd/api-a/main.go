@@ -37,5 +37,5 @@ func main() {
 	s.HandleFunc("/health_check", healthCheck)
 	s.HandleFunc("/greetings", getGreetings)
 	s.HandleFunc("/api-b", callApiB)
-	http.ListenAndServe(":3000", s)
+	http.ListenAndServe(":8080", s)
 }
