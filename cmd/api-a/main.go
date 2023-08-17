@@ -7,8 +7,9 @@ import (
 	"net/http"
 )
 
-// const urlApiB = "http://api-b:8080/api-b/greetings"
-const urlApiB = "http://localhost:8080/api-b/greetings"
+const urlApiB = "http://api-b:8080/api-b/greetings"
+
+//const urlApiB = "http://localhost:8080/api-b/greetings"
 
 func healthCheck(w http.ResponseWriter, r *http.Request) {
 	w.Write([]byte("Api A is working!"))
